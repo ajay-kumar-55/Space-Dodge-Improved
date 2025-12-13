@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Space Dodge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game">
+      <!-- Start Screen -->
+      <div id="startScreen">
+        <div id="gameTitle">SPACE DODGE</div>
+        <div id="instructions">
+          Use Arrow Keys or Tap Left/Right to Move<br />
+          Dodge the Asteroids!<br />
+        </div>
+
+        <!-- Difficulty Selection -->
+        <div id="difficultySelection">
+          <button class="difficulty-btn selected" data-difficulty="easy">
+            EASY
+          </button>
+          <button class="difficulty-btn" data-difficulty="medium">
+            MEDIUM
+          </button>
+          <button class="difficulty-btn" data-difficulty="hard">HARD</button>
+        </div>
+
+        <button id="playButton">▶ PLAY</button>
+      </div>
+
+      <!-- Touch zones for mobile controls -->
+      <div id="leftZone" class="touch-zone"></div>
+      <div id="rightZone" class="touch-zone"></div>
+
+      <div id="score">Score: 0</div>
+      <div id="pauseBtn">PAUSE</div>
+      <div id="pauseMenu">
+        PAUSED<br /><br />Press P to Resume<br />or Tap to Resume
+      </div>
+      <div id="gameOver">
+        GAME OVER<br /><br />
+        Final Score: <span id="finalScore">0</span><br />
+        <button id="restartButton">MAIN MENU</button>
+      </div>
+      <div id="player"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
