@@ -23,6 +23,18 @@ body {
   touch-action: none;
 }
 
+/* Developer Info Display */
+.devInfo {
+  color: #00ffff;
+  font-family: monospace;
+  font-size: 16px;
+  text-shadow: 0 0 20px #00ffff;
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+  position: absolute;
+  bottom: 0px;
+}
+
 /* Touch control areas (invisible) - cover left and right halves */
 .touch-zone {
   position: absolute;
@@ -282,3 +294,4 @@ body {
 #playButton:active {
   transform: scale(0.95);
 }
+
